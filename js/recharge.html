@@ -1,0 +1,67 @@
+	<style>
+		body {
+			font-size: 20px!important;
+		}
+		input {
+			margin: 5px;
+			height: 45px!important;
+			font-size: 20px!important;
+		}
+		button {
+			height: 45px!important;
+		}
+		.fee_slider {
+			width:80%;
+			margin-top: 20px;
+			float:right;
+		}
+		.fee_slider a {
+			width: 2.2em!important;
+			height: 2.2em!important;
+		}
+		.fee {
+			width:10%!important;
+			text-align: right;
+			margin-right: 5px;
+		}
+		.btn {
+			font-size: 20px!important;
+		}
+	</style>
+    <div class="content">
+        <div class="container">
+            <div class="row" >
+              <div class="span8 form-horizontal">
+                <button id="btnSubmit" type="button" class="btn" style="float:right;margin:10px;">提交</button>
+                <button id="btnLunch" type="button" class="btn" style="float:left;margin:10px;">交饭费</button>
+                <a href="#" id="linkSubmit" ></a>
+              </div>
+            </div>
+            <div class="row" >
+              <div class="span8 form-horizontal">
+                充值总和：<span id="sum1">0</span>
+              </div>
+            </div>
+            
+            <div class="row" >
+              <div class="span8 form-horizontal" id="content">
+                <ol>
+                </ol>
+              </div>
+            </div>
+            
+            <div class="row" >
+              <div class="span8 form-horizontal">
+                <button id="btnAdd" type="button" class="btn" style="float:right;margin:10px;">添加</button>
+                <input id="cnt" value="1" type="hidden">
+              </div>
+            </div>
+        </div>
+    </div>
+        <script id="tmplPerson" type="text/template">
+                    <li>
+                    	<span><button type="button" class="btn" style="float:right">X</button>
+                        <span><input class="name" value="" type="text" > </span>
+                        <span><div class="fee_slider" /><input class="fee" value="0" type="text" > </span>
+                    </li>
+        </script>
